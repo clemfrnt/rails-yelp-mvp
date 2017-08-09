@@ -1,0 +1,53 @@
+// Place all the styles related to the Restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: OpenSans Condenses;
+  color: black;
+  opacity: 0.8;
+
+}
+
+h1 {
+  font-family: Saira;
+  color:#1F74BA;
+}
+
+th {
+  color: darkred;
+}
+
+table,th, td {
+  text-align: center;
+  height: 45px;
+  padding: 8px;
+}
+
+link {
+  color: red;
+}
+
+table {
+  width: 100;
+  margin: auto;
+}
+
+.name a {
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+}
+
+.name a:hover {
+color: lightblue;
+}
+
+.cat i:hover {
+color: lightblue;
+}
+
+
+.name, .cat {
+
+}

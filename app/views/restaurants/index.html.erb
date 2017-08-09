@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3 text-center">
+        <h1>Restaurants List</h1>
+        <table class="text-center">
+          <thead>
+          </thead>
+          <tbody>
+            <% @restaurants.each do |restaurant| %>
+              <tr>
+                <td class= "name"><%= link_to restaurant.name, restaurant_path(restaurant)%></td>
+                <td><%= link_to new_restaurant_review_path(restaurant) do %>
+                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                <% end %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+
+        <%= link_to "Add a Restaurant",new_restaurant_path, class: "btn btn-primary"  %>
+    </div>
+  </div>
+</div>
+
